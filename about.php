@@ -10,7 +10,7 @@
           <h2>About</h2>
           <p>Webpages looking at downloading Stock data from Yahoo Finance and Quandl.</p>
 
-        <p>Boostrap front on onto data gleaned from these online services and sometimes stored locally on MySQL DB..</p>
+        <p>Boostrap frontend and Google Charts used on data gleaned from these online services and sometimes stored locally on MySQL DB..</p>
         </div>
       </div>
 

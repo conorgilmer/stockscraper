@@ -19,7 +19,7 @@
           <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="yahoocharts.php">Yahoocharts</a></li>
+                        <li><a href="yahoocharts.php?stockprice=MMM">Yahoocharts</a></li>
                         <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Quandl <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">

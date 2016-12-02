@@ -1,0 +1,6 @@
+# git ignore these files
+*.swp
+*.exe
+*.tmp
+*.temp
+*.o

@@ -27,7 +27,7 @@
 
         <div class="col-sm-6 col-md-4">
           <h2>Quandl</h2>
-          <p>Quandl Provides various open stock listings.</p>
+          <p>Quandl Provides various open stock listings WIKI, Federal Reserve Economic Data (FRED).</p>
           <p><a class="btn btn-primary" href="quandl.php" role="button">View details &raquo;</a></p>
         </div>
 

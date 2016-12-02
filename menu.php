@@ -19,18 +19,27 @@
           <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="yahoocharts.php?stockprice=MMM">Yahoocharts</a></li>
-                        <li class="dropdown">
+                      <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Yahoo Finance! <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="yahoocharts.php?stockprice=MMM">Yahoocharts(NYSE)</a></li>
+                        <li><a href="yahoochartsamex.php?stockprice=FAX">Yahoocharts(AMEX)</a></li>
+                        <li><a href="yahoochartsnasdaq.php?stockprice=YHOO">Yahoocharts(NASDAQ 100)</a></li>
+                        </ul>
+  
+                      <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Quandl <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                         <li><a href="quandl.php?qcode=WIKI/GOOG">Quandl (WIKI)</a></li>
                         <li><a href="quandlfred.php?qcode=FRED/JTU7000OSR">Quandl (FRED)</a></li>
                         </ul>
                         <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Local <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tables <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                        <li><a href="liststocks.php">List Locally Stored</a></li>
-                        <li><a href="local.php">Display Locally Stored</a></li>
+                        <li><a href="table_yf_amex.php">AMEX Stocks Yahoo Finance!</a></li>
+                        <li><a href="table_yf_nyse.php">NYSE Stocks Yahoo Finance!</a></li>
+                        <li><a href="table_yf_nasdaq.php">NASDAQ 100 Stocks Yahoo Finance!</a></li>
+                        <li><a href="table_quandl_wiki.php">Quandl (WIKI) </a></li>
                         </ul>
                         <li><a href="yahoocurr.php">Currency</a></li>
                         </li>

@@ -7,7 +7,7 @@
 
     function goToPage() {
         var page = document.getElementById('page').value;
-        window.location = "yahoocharts.php?stockprice=" + page;
+        window.location = "yahoochartsamex.php?stockprice=" + page;
     }
 
 </script>
@@ -45,8 +45,8 @@ function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $str
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-9">
- <h2>Yahoo Charts (NYSE)</h2>
-<p>Select a Code for a NYSE Stock Price</p>
+ <h2>Yahoo Charts (AMEX)</h2>
+<p>Select a Code for a AMEX Stock Price</p>
   <!--form>
   <select name="page" id="page" onchange="goToPage(this.value)">
   <option value="all">Select a Stock:</option>
@@ -62,7 +62,7 @@ function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $str
   <form>
   <select name="page" id="page" onchange="goToPage(this.value)">
                 <option class="form" style="width: 245px;" value="N/A">Select Stock</option>
-                <?php drop_down("id", nyse_code, nyse_name, nyse_codes, "nyse_code"); ?>
+                <?php drop_down("id", amex_code, amex_name, amex_codes, "amex_code"); ?>
 
   </form>
 

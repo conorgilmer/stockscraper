@@ -79,7 +79,7 @@ function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $str
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-<h2>Live Market Data with Yahoo Finance API JSON & jQuery</h2>
+<h2>Live Market Data with Yahoo Finance! </h2>
 
 <div id='result'></div>
 <div id='time'></div>

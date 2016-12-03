@@ -22,9 +22,9 @@
                       <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Yahoo Finance! <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                        <li><a href="yahoocharts.php?stockprice=MMM">Yahoocharts(NYSE)</a></li>
-                        <li><a href="yahoochartsamex.php?stockprice=FAX">Yahoocharts(AMEX)</a></li>
-                        <li><a href="yahoochartsnasdaq.php?stockprice=YHOO">Yahoocharts(NASDAQ 100)</a></li>
+                        <li><a href="yahoocharts.php?stockprice=MMM">Yahoo Finance! Chart - NYSE</a></li>
+                        <li><a href="yahoochartsamex.php?stockprice=FAX">Yahoo Finance! Chart - AMEX</a></li>
+                        <li><a href="yahoochartsnasdaq.php?stockprice=YHOO">Yahoo Finance! Chart - NASDAQ 100</a></li>
                         </ul>
   
                       <li class="dropdown">

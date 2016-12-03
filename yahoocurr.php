@@ -25,7 +25,7 @@
 
 <form method='POST'>
 <div class='web'>
-	<h1>Currency Conversion Using PHP and Yahoo Finance API</h1>
+	<h1>Currency Conversion using Yahoo Finance API</h1>
 <p> Currency rates taken from Yahoo! Finance</p>
 
  <br />

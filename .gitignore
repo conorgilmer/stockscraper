@@ -6,3 +6,5 @@
 *.temp
 *.o
 config.php
+config.local.php
+configconsulm.php

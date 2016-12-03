@@ -72,7 +72,7 @@ $br_values = implode(", ", $br_values); //comma sep
 <!-- Content Start -->
 
 		<script src="charts/Chart.js"></script>
-		<h1>Quandl Data with Charts.js using JSON and PHP</h1>
+		<h1>Quandl Data</h1>
 		
  <h2>Quandl Charts - WIKI DB</h2>
 <p>Select a Code for a Stock Price</p>

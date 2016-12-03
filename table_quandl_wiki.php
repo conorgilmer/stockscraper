@@ -41,7 +41,7 @@ if ($result) {
 	$htmlString .= "<th>Name</th>";
 	$htmlString .= "<th>Date</th>";
         $htmlString .= "<th>Start</th>";
-	$htmlString .= "<th colspan='3'>Actions</th>";
+	$htmlString .= "<th colspan='4'>Actions</th>";
 
 	$htmlString .= "</tr>";
 	
@@ -72,6 +72,9 @@ if ($result) {
 		$htmlString .=  "</td>";
 		$htmlString .=  "<td>";
 		$htmlString .=  formatQWIKILocal($product["wiki_code"]);
+		$htmlString .=  "</td>";
+		$htmlString .=  "<td>";
+		$htmlString .=  formatQWIKIjson($product["wiki_code"]);
 		$htmlString .=  "</td>";
 		
 		

@@ -17,6 +17,11 @@ function formatCSVLink($code){
 }
 
 
+/* form the link for download yahoojson link */
+function formatQWIKIjson($code){
+    return "<a href ='https://www.quandl.com/api/v1/datasets/$code.json'>JSON</a>";
+}
+
 /* form the link for download yahooCSV link */
 function formatQWIKICSVLink($code){
     return "<a href ='https://www.quandl.com/api/v1/datasets/$code.csv'>CSV</a>";

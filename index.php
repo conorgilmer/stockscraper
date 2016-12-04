@@ -36,7 +36,7 @@
 
         <div class="col-sm-6 col-md-4">
           <h2>Local</h2>
-          <p>Downloaded and Locally Stored data.</p>
+          <p>Downloaded and Locally Stored data on database(MYSQL) and csv file..</p>
           <p><a class="btn btn-primary" href="index.php" role="button">Local &raquo;</a></p>
         </div>
       </div>

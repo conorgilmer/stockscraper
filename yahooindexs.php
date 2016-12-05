@@ -16,7 +16,7 @@
 
 <script>
 
-var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE', '^GDAXI', '^FCHI', '^BFX', 'FTSEMIB.MI', '^OSEAX' ,'^HSI'],
+var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE', '^GDAXI', '^FCHI', '^ISEQ', '^BFX', 'FTSEMIB.MI', '^OSEAX' ,'^HSI'],
     properties = [
         { classname: 'name', property: 'Name' },
         { classname: 'result', property: 'LastTradePriceOnly' },
@@ -60,10 +60,32 @@ $.getJSON("http://query.yahooapis.com/v1/public/yql", {
   
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
  <h2>Yahoo Finance! Indices</h2>
 <div id="indices"> </div>
 </div>
+</div>
+      <div class="row">
+        <div class="col-lg-12">
+<h2>Indices Graphs </h2>
+</div>
+</div>
+      <div class="row">
+
+        <div class="col-lg-12">
+ <img src="http://chart.finance.yahoo.com/z?s=^ISEQ" border="0" alt="photo" class="responsive-image">
+ <img src="http://chart.finance.yahoo.com/z?s=^FTSE" border="0" alt="photo" class="responsive-image">
+</div>
+</div>
+      <div class="row">
+        <div class="col-lg-12">
+ <img src="http://chart.finance.yahoo.com/z?s=^GDAXI" border="0" alt="photo" class="responsive-image">
+ <img src="http://chart.finance.yahoo.com/z?s=^SSMI" border="0" alt="photo" class="responsive-image">
+
+</div>
+
+
+
 </div>
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>

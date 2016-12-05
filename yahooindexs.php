@@ -3,10 +3,7 @@
 
 
 <style>
-.symbol { 
-    float: left;
-    margin-right: 3px;
-}
+.symbol { float: left; margin-right: 3px; }
 .symbol .name { display: block }
     
 .symbol.up { background: #70DB70 }
@@ -19,7 +16,7 @@
 
 <script>
 
-var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE'],
+var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE', '^GDAXI', '^FCHI', '^BFX', 'FTSEMIB.MI', '^OSEAX' ,'^HSI'],
     properties = [
         { classname: 'name', property: 'Name' },
         { classname: 'result', property: 'LastTradePriceOnly' },
@@ -52,23 +49,14 @@ $.getJSON("http://query.yahooapis.com/v1/public/yql", {
     $("#indices").append(elements);
 });
 
-
 </script>
 
 <!-- menu -->
 <?php include('menu.php'); ?>  
 
-
-
-<?php
-
-require ("db.php");
-
-?>
-
+<?php require ("db.php"); ?>
 
 <!-- Content Start -->
-
   
       <!-- Example row of columns -->
       <div class="row">

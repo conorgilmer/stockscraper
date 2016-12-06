@@ -42,8 +42,13 @@
                         <li><a href="table_yf_nasdaq.php">NASDAQ 100 Stocks Yahoo Finance!</a></li>
                         <li><a href="table_quandl_wiki.php">Quandl (WIKI) </a></li>
                         </ul>
-                        <li><a href="yahoocurr.php">Currency</a></li>
+                        <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exchange Rates <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="quandlecb.php?qcode=ECB/EURNOK">ECB Exhange Rates</a></li>
+                        <li><a href="yahoocurr.php">Currency Converter</a></li>
                         </li>
+                        </ul>
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

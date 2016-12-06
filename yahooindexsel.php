@@ -60,6 +60,7 @@ $.getJSON("http://query.yahooapis.com/v1/public/yql", {
 
 </script>
 
+
 <!-- menu -->
 <?php include('menu.php'); ?>  
 
@@ -95,24 +96,13 @@ $.getJSON("http://query.yahooapis.com/v1/public/yql", {
 
 </div>
 </div>
-
-
-      <div class="row">
-
-        <div class="col-lg-12">
- <img src="http://chart.finance.yahoo.com/z?s=^ISEQ" border="0" alt="photo" class="responsive-image">
- <img src="http://chart.finance.yahoo.com/z?s=^FTSE" border="0" alt="photo" class="responsive-image">
-</div>
-</div>
       <div class="row">
         <div class="col-lg-12">
- <img src="http://chart.finance.yahoo.com/z?s=^GDAXI" border="0" alt="photo" class="responsive-image">
- <img src="http://chart.finance.yahoo.com/z?s=^SSMI" border="0" alt="photo" class="responsive-image">
 
-</div>
+<?php echo $_GET['idx'];?>
+ <img src="http://chart.finance.yahoo.com/z?s=<?echo $_GET['idx'];?>" border="0" alt="photo" class="responsive-image">
 
-
-
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>

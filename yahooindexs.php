@@ -16,7 +16,7 @@
 
 <script>
 
-var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE', '^GDAXI', '^FCHI', '^ISEQ', '^BFX', 'FTSEMIB.MI', '^OSEAX' ,'^HSI'],
+var symbols = ['^GSPC', '^NDX', 'GLD', 'SLV', '^N225', '^FTSE', '^GDAXI', '^FCHI', '^ISEQ', '^FTAI', '^BFX', 'FTSEMIB.MI', '^OSEAX' ,'^HSI'],
     properties = [
         { classname: 'name', property: 'Name' },
         { classname: 'result', property: 'LastTradePriceOnly' },

@@ -25,7 +25,7 @@
                         <li><a href="yahoocharts.php?stockprice=MMM">Yahoo Finance! Chart - NYSE</a></li>
                         <li><a href="yahoochartsamex.php?stockprice=FAX">Yahoo Finance! Chart - AMEX</a></li>
                         <li><a href="yahoochartsnasdaq.php?stockprice=YHOO">Yahoo Finance! Chart - NASDAQ 100</a></li>
-                        <li><a href="yahooindexs.php">Yahoo Indices</a></li>
+                        <li><a href="yahooindexs.php">Yahoo World Stock Indices</a></li>
                         </ul>
   
                       <li class="dropdown">

@@ -1,7 +1,9 @@
 
+
+<?php $date_made = date("Y"); ?>
       <!-- Site footer -->
       <footer class="footer">
-        <p>&copy; Conor Gilmer (<em><a href="mailto:conor.gilmer@gmail.com">conor.gilmer@gmail.com</a></em>) 2016</p>
+        <p>&copy; Conor Gilmer (<em><a href="mailto:conor.gilmer@gmail.com">conor.gilmer@gmail.com</a></em>) <?php echo $date_made;?></p>
       </footer>
 
     </div> <!-- /container -->

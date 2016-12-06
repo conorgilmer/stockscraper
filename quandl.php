@@ -28,8 +28,10 @@ else
 $qlink_json = 'https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?api_key='.$quandl_token;
 $br_json = file_get_contents($qlink_json);
 $br_obj = json_decode($br_json, true);
+//$br_obj = $br_json;
 //Build arrays
 $stock_code = $br_obj['code'];
+$stock_begin = $br_obj['from_date'];
 $stock_close = 0;
 $stock_colnames = array();
 $stock_colnames = $br_obj['column_names'];
@@ -96,7 +98,7 @@ $br_values = implode(", ", $br_values); //comma sep
 
 
 
-		<p>Stock Code = <?php echo $stock_code;?></p>
+		<p>Stock Code = <?php echo $stock_code;?>  <a href="high.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highbeam</a> <?php echo $stock_begin;?></p>
 		<div style="width:90%">
 			<div>
 				<canvas id="canvas" height="400" width="800"></canvas>

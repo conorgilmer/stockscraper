@@ -83,10 +83,12 @@ $.getJSON("http://query.yahooapis.com/v1/public/yql", {
   <option value="all">Select a Stock Exchange:</option>
     <option value="^ISEQ">ISEQ</option>
     <option value="^FTSE">FTSE</option>
+    <option value="^DJI">Dow Jones</option>
     <option value="^NDX">NASDAQ 100</option>
     <option value="^GSPC">S & P 500</option>
     <option value="^GDAX1">DAX</option>
     <option value="^FCHI">CAC 50</option>
+    <option value="^SSMI">Swiss</option>
     <option value="^OSEAX">Oslo Exchange</option>
     <option value="^N225">Nikkei</option>
     <option value="^HSI">Hang Seng</option>

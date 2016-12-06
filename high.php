@@ -38,7 +38,7 @@ $today = date("-m-d");
             text: '<?php echo $qcode;?> Stock Price'
           },
           series: [{
-            name: 'MS',
+            name: '<?php echo $qcode;?>',
             data: hiJson,
             tooltip: {
               valueDecimals: 2

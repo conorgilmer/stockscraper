@@ -22,3 +22,7 @@ interface to show stock prices from opendata online
 - Bel 20
 - Gold
 - Silver
+
+#Currencies
+- convertor
+- index of currencies to euro

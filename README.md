@@ -27,4 +27,4 @@ interface to show stock prices from opendata online
 - convertor
 - index of currencies to euro
 
-configured to call highcharts.com 
+configured to call highcharts.com (Free package 50 calls per day)

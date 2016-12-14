@@ -87,10 +87,10 @@ $br_values = implode(", ", $br_values); //comma sep
 		<h1>Quandl Data</h1>
 		
  <h2>Quandl Charts - FRED (Federal Reserve Economic Data)</h2>
-<p>Select a Code for a Stock Price</p>
+<p>Select a Code for Data</p>
   <form>
   <select name="page" id="page" onchange="goToPage(this.value)">
-  <option value="all">Select a Stock:</option>
+  <option value="all">Select a Code:</option>
     <option value="FRED/IRLIMPORTQDSMEI">Imports of Goods in Ireland</option>
     <option value="FRED/IRLEXPORTADSMEI">Exports of Goods in Ireland</option>
 <option value="FRED/SIPOVGINIIRL,GINI Index for Ireland</option>

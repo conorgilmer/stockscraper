@@ -8,7 +8,7 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-9">
-          <h2>Stock Prices</h2>
+          <h2>FRED Data</h2>
 <p>Displayed using Highbeam</p>
 
 <?php

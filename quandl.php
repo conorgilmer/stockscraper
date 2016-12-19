@@ -1,6 +1,8 @@
 <?php
 
 require ("db.php");
+
+/* format pull down menu from table */
 function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $strMethod="asc") {
 
   $strQuery = "select $strName, $strText from $tableName";
@@ -18,23 +20,26 @@ function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $str
 
 <?php 
 
+/* get input code */
 if($_GET['qcode'] != '')
     $qcode = $_GET['qcode'];
 else
     $qcode = 'WIKI/MMM';
 
-//************  Prices  ****************
-//$qlink_json = 'https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?collapse=quarterly&start_date=2012-01-01&end_date=2013-12-31&api_key=xcN1MXUnC_248YofABy-';
+/************  Prices  ****************/
+/* uses quandl version 1 url          */
 $qlink_json = 'https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?api_key='.$quandl_token;
 $br_json = file_get_contents($qlink_json);
 $br_obj = json_decode($br_json, true);
-//$br_obj = $br_json;
+
 //Build arrays
 $stock_code = $br_obj['code'];
 $stock_begin = $br_obj['from_date'];
 $stock_close = 0;
 $stock_colnames = array();
 $stock_colnames = $br_obj['column_names'];
+
+/* find the closing field number*?
 while ($stock_colnames[$stock_close]<>"Close") {
     $stock_close++;
 }
@@ -43,9 +48,9 @@ $br_label_arr = array();
 $br_value_arr = array();
 $i = 0;
 	foreach ($br_obj['data'] as $br_data){ //loop through data
-		$br_label_arr[] = date('M j',strtotime($br_data[0])); //pull dates
+		$br_label_arr[] = date('Y M j',strtotime($br_data[0])); //pull dates
 		$br_value_arr[] = $br_data[$stock_close]; //pull prices
-		if (++$i == 30) break;
+		if (++$i == 50) break;
 	}
 $br_labels = array_reverse($br_label_arr); //reverse the data for ASC
 $br_values = array_reverse($br_value_arr); //reverse the data for ASC
@@ -97,7 +102,7 @@ $br_values = implode(", ", $br_values); //comma sep
   </form>
 
 
-
+<!-- link to generate graph with  highcharts -->
 		<p>Stock Code = <?php echo $stock_code;?>  <a href="high.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highbeam</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
 		<div style="width:90%">
 			<div>

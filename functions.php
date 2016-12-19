@@ -1,5 +1,14 @@
 <?php
 
+/* format money */
+function formatMoney($value) {
+  $currency = "€";
+  //$currency = "$";
+  //$currency = "£";
+  return $currency.number_format($value,2);
+}
+
+
 /* form the link for show table link */
 function formatTableLink($code){
 

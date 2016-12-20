@@ -39,7 +39,7 @@ $stock_close = 0;
 $stock_colnames = array();
 $stock_colnames = $br_obj['column_names'];
 
-/* find the closing field number*?
+/* find the closing field number*/
 while ($stock_colnames[$stock_close]<>"Close") {
     $stock_close++;
 }
@@ -103,7 +103,7 @@ $br_values = implode(", ", $br_values); //comma sep
 
 
 <!-- link to generate graph with  highcharts -->
-		<p>Stock Code = <?php echo $stock_code;?>  <a href="high.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highbeam</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
+		<p>Stock Code = <?php echo $stock_code;?>  <a href="high.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highcharts</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
 		<div style="width:90%">
 			<div>
 				<canvas id="canvas" height="400" width="800"></canvas>

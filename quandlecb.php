@@ -2,6 +2,8 @@
 <?php
 
 require ("db.php");
+
+/* build drop down from database table */
 function drop_down($intID, $strName, $strText,  $tableName, $strOrderField, $strMethod="asc") {
 
 
@@ -30,10 +32,8 @@ if($_GET['qcode'] != '')
 else
     $qcode = "ECB/EURUSD";
 
-//************  Prices  ****************
-//$qlink_json = file_get_contents('https://www.quandl.com/api/v1/datasets/FRED/PI20171.json?collapse=quarterly&start_date=2016-06-01&end_date=2016-09-01&api_key=xcN1MXUnC_248YofABy-');
-//$qlink_json = 'https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?collapse=quarterly&start_date=2012-01-01&end_date=2013-12-31&api_key=xcN1MXUnC_248YofABy-';
-$qlink_json ='https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?api_key=xcN1MXUnC_248YofABy-';
+/************  Prices  ***************/
+$qlink_json ='https://www.quandl.com/api/v1/datasets/'.$qcode.'.json?api_key='.$quandl_key;
 
 $br_json = file_get_contents($qlink_json);
 $br_obj = json_decode($br_json, true);
@@ -119,7 +119,7 @@ $br_values = implode(", ", $br_values); //comma sep
 
 
 
-		<p>Stock Code = <?php echo $stock_code;?></p>  <a href="highecb.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highbeam</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
+		<p>Stock Code = <?php echo $stock_code;?></p>  <a href="highecb.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highcharts</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
 		<div style="width:90%">
 			<div>
 				<canvas id="canvas" height="400" width="800"></canvas>

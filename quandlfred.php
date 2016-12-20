@@ -145,7 +145,7 @@ $br_values = implode(", ", $br_values); //comma sep
 
 
 
-		<p>Stock Code = <?php echo $stock_code;?></p>  <a href="highfred.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highbeam</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
+		<p>Stock Code = <?php echo $stock_code;?></p>  <a href="highfred.php?qcode=<?php echo $stock_code?>&startDate=<?php echo $stock_begin;?>">View using Highcharts</a> From (<?php echo $stock_begin;?> to <?php echo date("Y-m-d");?>)</p>
 		<div style="width:90%">
 			<div>
 				<canvas id="canvas" height="400" width="800"></canvas>

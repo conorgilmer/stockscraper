@@ -28,3 +28,4 @@ interface to show stock prices from opendata online
 - index of currencies to euro
 
 configured to call highcharts.com (Free package 50 calls per day)
+charts.js used.
